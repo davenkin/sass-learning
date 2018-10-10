@@ -1,0 +1,34 @@
+@import './global';
+$primary : #434433;
+
+html {
+  color: $primary;
+}
+
+%button-base {
+   radius: 2px;
+   margin: 5px;
+}
+
+.menu-button {
+   @extend %button-base;
+   background-color: blue;
+   color: white;
+}
+#main {
+   p {
+  color:black;
+} 
+}
+a {
+   color: red;
+   &:hover{
+     color: green;
+   }
+}
+#main {
+   color: blue;
+   &-header {
+   color: yellow;
+   }
+}
